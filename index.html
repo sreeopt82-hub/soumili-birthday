@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#12050b">
+  <meta name="description" content="A little birthday universe made for Soumili.">
+  <title>For Soumili ❤️ — Happy Birthday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div id="heartField" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">A little corner of the internet, made just for you</p>
+        <h1>Happy Birthday,<br><span>Soumili</span> <b>♡</b></h1>
+        <p class="hero-sub">From one little story reply to a whole journey I never want to stop writing.</p>
+        <button class="primary-btn" id="openBtn" type="button">
+          <span>Open your surprise</span><span class="arrow">↓</span>
+        </button>
+        <p class="tiny-hint">Tap, click, scroll — there are little surprises everywhere.</p>
+      </div>
+      <div class="scroll-cue">SCROLL <span>↓</span></div>
+    </section>
+
+    <section class="reveal-section letter-section" id="letter">
+      <div class="section-label">01 / OUR STORY</div>
+      <div class="letter-layout">
+        <div>
+          <p class="script">Dear Soumili,</p>
+          <h2>Imagine if I had<br><em>never replied</em> to that story.</h2>
+        </div>
+        <div class="letter-card">
+          <p id="typeText"></p><span class="caret">|</span>
+          <button class="text-btn" id="continueBtn" type="button">Continue our story →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal-section timeline-section" id="journey">
+      <div class="section-label">02 / FROM THEN TO NOW</div>
+      <div class="timeline-head">
+        <h2>One tiny message.<br><span>A thousand memories.</span></h2>
+        <p>Not every important moment has a date. Some are simply moments that changed everything.</p>
+      </div>
+
+      <div class="timeline">
+        <button class="memory active" type="button" data-title="The story reply" data-copy="It started so simply — a story, a reply, and two people who had no idea where that tiny conversation would lead.">
+          <span class="dot"></span><span class="memory-num">01</span>
+          <strong>The story reply</strong><small>Where it all began</small>
+        </button>
+        <button class="memory" type="button" data-title="Getting closer" data-copy="Messages became something to look forward to. Random conversations became the best part of ordinary days.">
+          <span class="dot"></span><span class="memory-num">02</span>
+          <strong>Getting closer</strong><small>Strangers → something more</small>
+        </button>
+        <button class="memory" type="button" data-title="Our little world" data-copy="The jokes, late-night talks, teasing, silly moments, little fights and the memories only we understand became ours.">
+          <span class="dot"></span><span class="memory-num">03</span>
+          <strong>Our little world</strong><small>All the little things</small>
+        </button>
+        <button class="memory" type="button" data-title="Choosing each other" data-copy="Perfect days are beautiful. Difficult days matter too. Somehow, after every storm, we kept finding our way back to each other.">
+          <span class="dot"></span><span class="memory-num">04</span>
+          <strong>Choosing each other</strong><small>Through every kind of day</small>
+        </button>
+        <button class="memory" type="button" data-title="This moment" data-copy="And now I'm here, celebrating the girl who started as a notification and became one of the most special people in my life.">
+          <span class="dot"></span><span class="memory-num">05</span>
+          <strong>This moment</strong><small>Happy Birthday, my love</small>
+        </button>
+      </div>
+
+      <div class="memory-display" aria-live="polite">
+        <span class="display-kicker">A chapter worth keeping</span>
+        <h3 id="memoryTitle">The story reply</h3>
+        <p id="memoryCopy">It started so simply — a story, a reply, and two people who had no idea where that tiny conversation would lead.</p>
+      </div>
+    </section>
+
+    <section class="reveal-section gallery-section" id="memories">
+      <div class="section-label">03 / LITTLE PIECES OF US</div>
+      <div class="gallery-intro">
+        <div>
+          <p class="script">Some things are better remembered visually.</p>
+          <h2>Snapshots of <span>you</span>.<br>Snapshots of <span>us</span>.</h2>
+        </div>
+        <button class="secondary-btn" id="shuffleBtn" type="button">✨ Make the memories move</button>
+      </div>
+
+      <div class="gallery">
+        <button class="photo photo-large" type="button" data-caption="A collection of moments I never want to forget.">
+          <img src="./assets/journey-collage.png" alt="Birthday journey collage with photos of Soumili and the couple">
+          <span>Our little archive</span>
+        </button>
+        <button class="photo photo-small" type="button" data-caption="Today is about celebrating you — every version of you, past and present.">
+          <img src="./assets/birthday-card.png" alt="Colorful birthday card made for Soumili">
+          <span>Today is yours ♡</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="reveal-section promise-section" id="promise">
+      <div class="section-label">04 / A LITTLE PROMISE</div>
+      <div class="promise-wrap">
+        <div class="orbit" aria-hidden="true"><span>♡</span><span>♡</span><span>♡</span></div>
+        <p class="script">If I could go back...</p>
+        <h2>I'd still send<br>that first reply.</h2>
+        <p class="promise-copy">Because I know where it led me. To you.</p>
+        <button class="heart-btn" id="heartBtn" type="button" aria-label="Send a heart">
+          <span>♡</span>
+          <small>tap the heart</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="reveal-section final-section" id="final">
+      <div class="final-card">
+        <div class="mini-stars">✦ &nbsp; ✧ &nbsp; ✦</div>
+        <p class="script">And so, my love...</p>
+        <h2>Happy Birthday,<br><span>Soumili.</span></h2>
+        <p class="final-message">
+          Thank you for every conversation, every laugh, every reassurance, every silly moment,
+          every difficult day we got through, and every memory you've given me.
+          You went from a story reply to my favourite person, and I wouldn't change a single chapter.
+        </p>
+        <p class="final-message strong">I hope this is only another chapter in our story — with many more birthdays, memories, adventures, laughs and beautiful moments together. ❤️</p>
+        <div class="signature">More than yesterday, less than tomorrow.<br><span>— always yours</span></div>
+        <button class="primary-btn replay" id="replayBtn" type="button">↻ Read it from the beginning</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close-lightbox" id="closeLightbox" type="button" aria-label="Close photo">×</button>
+    <div class="lightbox-inner">
+      <img id="lightboxImg" src="" alt="">
+      <p id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
